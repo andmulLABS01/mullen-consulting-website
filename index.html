@@ -622,7 +622,7 @@
             <div class="contact-content">
                 <div class="contact-form fade-in">
                     <h3>Get Your Free Consultation</h3>
-                    <form>
+                    <form action="https://formspree.io/f/xanordrk" method="POST">
                         <div class="form-group">
                             <label for="name">Full Name</label>
                             <input type="text" id="name" name="name" required>
@@ -722,21 +722,6 @@
             } else {
                 header.style.background = 'linear-gradient(135deg, #2c3e50 0%, #34495e 100%)';
             }
-        });
-
-        // Form submission
-        document.querySelector('form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form data
-            const formData = new FormData(this);
-            const data = Object.fromEntries(formData);
-            
-            // Show success message
-            alert('Thank you for your interest! We\'ll contact you within 2 business hours to schedule your free consultation.');
-            
-            // Reset form
-            this.reset();
         });
 
         // Add hover effects to service cards
